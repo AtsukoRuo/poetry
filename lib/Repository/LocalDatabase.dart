@@ -17,7 +17,7 @@ class LocalDatabase implements DataSource {
 
   // 与数据库建立连接
   @override
-  Future<void> connect(ConnectionArgument? connectionArgument) async {
+  Future<void> connect({ConnectionArgument? connectionArgument}) async {
     if (_database != null) return;
     helper.setupDatabase();
 

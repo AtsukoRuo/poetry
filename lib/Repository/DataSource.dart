@@ -1,7 +1,7 @@
 class DataSource {
   DataSource._();
 
-  Future<void> connect(ConnectionArgument? connectionArgument) async {
+  Future<void> connect({ConnectionArgument? connectionArgument}) async {
     throw UnimplementedError();
   }
 
